@@ -1,11 +1,25 @@
-import React, { Suspense, useEffect, useState } from "react";
-import { Canvas } from "@react-three/fiber";
+import React, { Suspense, useEffect, useRef, useState } from "react";
+import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
+import * as THREE from "three";
 
 import CanvasLoader from "../Loader";
 
 const Computers = () => {
-  const computer = useGLTF("./desktop_pc/scene.gltf");
+  const computer = useGLTF("/desktop_pc/scene.gltf"); // Ensure path is correct
+  const computerRef = useRef();
+
+  useFrame(({ clock }) => {
+    if (computerRef.current) {
+      const t = clock.getElapsedTime();
+
+      // Floating up and down (Y-axis)
+      computerRef.current.position.y = -3.25 + Math.sin(t) * 0.1;
+
+      // Slow rotation around Y-axis
+      computerRef.current.rotation.y += 0.005;
+    }
+  });
 
   return (
     <mesh>
@@ -20,10 +34,11 @@ const Computers = () => {
       />
       <pointLight intensity={1} />
       <primitive
+        ref={computerRef}
         object={computer.scene}
-        scale={0.75} // Keep scale normal for desktop
-        position={[0, -3.25, -1.5]}
-        rotation={[-0.01, -0.2, -0.1]}
+        scale={0.6} // Reduced scale to make the computer smaller
+        position={[0, -3.25, -1.5]} // base Y position, adjusted by animation
+        rotation={[-0.01, -0.2, -0.1]} // initial rotation
       />
     </mesh>
   );
@@ -34,7 +49,7 @@ const ComputersCanvas = () => {
 
   useEffect(() => {
     const mediaQuery = window.matchMedia("(max-width: 500px)");
-    
+
     const handleMediaQueryChange = (event) => {
       setIsMobile(event.matches);
     };
@@ -47,9 +62,9 @@ const ComputersCanvas = () => {
   }, []);
 
   return (
-    !isMobile && ( // Hide on mobile screens
+    !isMobile && (
       <Canvas
-        frameloop="demand"
+        frameloop="always"
         shadows
         dpr={[1, 2]}
         camera={{ position: [20, 3, 5], fov: 25 }}

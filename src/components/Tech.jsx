@@ -12,18 +12,23 @@ const Tech = () => {
       ".tech-icon",
       {
         opacity: 0,
-        y: 80,
+        y: 60,
+        scale: 0.8,
+        rotate: -15,
       },
       {
         opacity: 1,
         y: 0,
-        duration: 2.5,
+        scale: 1,
+        rotate: 0,
+        duration: 1.5,
+        ease: "power3.out",
         stagger: 0.1,
         scrollTrigger: {
           trigger: ".tech-icons-wrapper",
           start: "top 80%",
           end: "bottom 70%",
-          scrub: true,
+          toggleActions: "play none none reverse",
         },
       }
     );
@@ -37,7 +42,7 @@ const Tech = () => {
       </div>
       <div className="tech-icons-wrapper flex flex-row flex-wrap justify-center gap-10">
         {technologies.map((technology) => (
-          <div className="w-28 h-28" key={technology.name}>
+          <div className="tech-icon-wrapper w-28 h-28" key={technology.name}>
             <img
               src={technology.icon}
               alt={technology.name}
