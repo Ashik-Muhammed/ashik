@@ -262,6 +262,20 @@ const testimonials = [
 
 const projects = [
   {
+    name: "Zygreen",
+    description:
+      "Zygreen is an eco-conscious lifestyle brand dedicated to sustainable innovation for a better tomorrow. The platform offers premium, earth-friendly products that combine cutting-edge design with environmental responsibility. Features include a curated marketplace of sustainable products, environmental impact tracking, educational content about eco-friendly living, and a community platform for conscious consumers. The application promotes sustainable choices through gamification, personalized recommendations, and transparent supply chain information.",
+    tags: [
+      { name: "react", color: "blue-text-gradient" },
+      { name: "node", color: "green-text-gradient" },
+      { name: "ai", color: "pink-text-gradient" },
+      { name: "firebase", color: "yellow-text-gradient" },
+    ],
+    image: zygreen,
+    source_code_link: "https://github.com/Ashik-Muhammed/zygreen",
+  },
+  {
+    
     name: "NIMO",
     description:
       "NIMO is a comprehensive personal finance management application built with Flutter and Firebase. It helps you track your expenses, manage debts, analyze spending patterns, and gain better control over your personal finances. With a clean, intuitive interface and powerful features, NIMO makes financial management simple and effective.",
@@ -287,19 +301,7 @@ const projects = [
     image: travelita,
     source_code_link: "https://github.com/Ashik-Muhammed/Travelita",
   },
-  {
-    name: "Zygreen",
-    description:
-      "Zygreen is an eco-conscious lifestyle brand dedicated to sustainable innovation for a better tomorrow. The platform offers premium, earth-friendly products that combine cutting-edge design with environmental responsibility. Features include a curated marketplace of sustainable products, environmental impact tracking, educational content about eco-friendly living, and a community platform for conscious consumers. The application promotes sustainable choices through gamification, personalized recommendations, and transparent supply chain information.",
-    tags: [
-      { name: "python", color: "blue-text-gradient" },
-      { name: "iot", color: "green-text-gradient" },
-      { name: "ai", color: "pink-text-gradient" },
-      { name: "sensors", color: "yellow-text-gradient" },
-    ],
-    image: zygreen,
-    source_code_link: "https://github.com/Ashik-Muhammed/zygreen",
-  },
+  
   {
     name: "CrediScope - Loan Risk Predictor",
     description:
