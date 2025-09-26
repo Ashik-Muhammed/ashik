@@ -11,10 +11,9 @@ import framer from './tech/framer.png';
 import css from "./tech/css.png";
 import figma from "./tech/figma.png";
 import gearXpert from './gearXpert.png';
-import project1 from './proj1.jpg'
-import project2 from './project2.jpg'
 import project3 from './project3.jpg';
-import nimo from './nimo.png';
+import project2 from './proj1.jpg'
+import project1 from './project2.jpg'
 import mysql from './tech/mysql.png';
 import express from './tech/express.png';
 import aws from './tech/aws.png';
@@ -29,7 +28,6 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import threejs from "./tech/threejs.svg";
 import firstTestimonial from './Tars Ken.webp';
-import travelita from './travelita.png';
 import secondTestimonial from './image.webp';
 import thirdTestimonial from './third testimonial.webp';
 import python from "./tech/python.png";
@@ -39,12 +37,10 @@ import Android from "./tech/android-studio.png";
 import dart from "./tech/dart.png";
 import java from "./tech/java.png";
 import office from "./tech/Microsoft_office.png";
-import zygreen from "./zygreeen.png";
 import C from "./tech/C.png";
 export {
 project1,
   Flutter,
-  zygreen,
   Android,
   dart,
   java,
@@ -52,7 +48,6 @@ project1,
   C,
   logo,
   backend,
-  travelita,
   creator,
   mobile,
   web,
@@ -60,7 +55,6 @@ project1,
   menu,
   close,
   css,
-  nimo,
   gearXpert,
   project2,
   project3,
