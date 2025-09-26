@@ -272,7 +272,7 @@ const projects = [
       { name: "firebase", color: "yellow-text-gradient" },
     ],
     image: zygreen,
-    source_code_link: "https://github.com/Ashik-Muhammed/zygreen",
+    source_code_link: "https://zygreeen.web.app",
   },
   {
     
@@ -299,7 +299,7 @@ const projects = [
       { name: "nodejs", color: "yellow-text-gradient" },
     ],
     image: travelita,
-    source_code_link: "https://github.com/Ashik-Muhammed/Travelita",
+    source_code_link: "https://ashik-muhammed.github.io/Travelita/",
   },
   
   {
