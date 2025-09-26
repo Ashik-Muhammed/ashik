@@ -6,7 +6,7 @@ import * as THREE from "three";
 import CanvasLoader from "../Loader";
 
 const Computers = () => {
-  const computer = useGLTF("/desktop_pc/scene.gltf"); // Ensure path is correct
+  const computer = useGLTF("./desktop_pc/scene.gltf"); // Ensure path is correct
   const computerRef = useRef();
 
   useFrame(({ clock }) => {
