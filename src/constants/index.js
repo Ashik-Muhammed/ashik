@@ -1,6 +1,7 @@
 
 import {
 project1,
+zygreen,
   Flutter,
   Android,
   dart,
@@ -17,7 +18,9 @@ project1,
   menu,
   close,
   css,
+  nimo,
   gearXpert,
+  travelita,
   project2,
   project3,
   mysql,
@@ -50,6 +53,7 @@ import tc from "../assets/company/tc.png";
 import ucek from "../assets/company/ucek.png";
 import icc from "../assets/company/icc.png";
 import sk from "../assets/company/sk.jpg";
+import log from "../assets/company/logo.jpg";
 
 export const navLinks = [
 
@@ -169,6 +173,32 @@ const technologies = [
 
 const experiences = [
   {
+    title: "AI and IOT Developer",
+    company_name: "Zygreen Pvt Ltd",
+    icon: log,
+    iconBg: "#E6DEDD",
+    date: "Aug 2025 - present",
+    points: [
+      "Developed AI-powered solutions and IoT applications using Python and Java frameworks.",
+      "Implemented machine learning models for data analysis and predictive analytics.",
+      "Designed and deployed IoT sensor networks and real-time monitoring systems.",
+      "Collaborated with cross-functional teams to integrate AI/ML capabilities into existing workflows.",
+    ],
+  },
+  {
+    title: "Freelance Web Developer",
+    company_name: "",
+    icon: logo,
+    iconBg: "#E6DEDD",
+    date: "Sept 2023 - Aug 2025",
+    points: [
+      "Developed responsive websites and web applications for various clients using modern technologies.",
+      "Built user-friendly interfaces with React, HTML, CSS, and JavaScript frameworks.",
+      "Collaborated with clients to understand requirements and deliver customized solutions.",
+      "Optimized websites for performance, accessibility, and search engine optimization.",
+    ],
+  },
+  {
     title: "Java & Python Intern",
     company_name: "Skill Haara T&P Services Pvt Ltd",
     icon: sk,
@@ -231,6 +261,45 @@ const testimonials = [
 ];
 
 const projects = [
+  {
+    name: "NIMO",
+    description:
+      "NIMO is a comprehensive personal finance management application built with Flutter and Firebase. It helps you track your expenses, manage debts, analyze spending patterns, and gain better control over your personal finances. With a clean, intuitive interface and powerful features, NIMO makes financial management simple and effective.",
+    tags: [
+      { name: "flutter", color: "blue-text-gradient" },
+      { name: "firebase", color: "green-text-gradient" },
+      { name: "dart", color: "pink-text-gradient" },
+      { name: "mobile", color: "yellow-text-gradient" },
+    ],
+    image: nimo,
+    source_code_link: "https://github.com/Ashik-Muhammed/nimo",
+  },
+  {
+    name: "Travelita",
+    description:
+      "Travelita is a comprehensive tour package management platform built with modern web technologies. The platform features vendor dashboards for creating and managing customized tour packages with detailed itineraries, pricing, and availability management. Users can browse, filter, and book tours with an intuitive interface, secure payment processing, and booking confirmations. Administrators have access to comprehensive analytics, user management, and platform oversight tools.",
+      tags: [
+      { name: "flutter", color: "blue-text-gradient" },
+      { name: "firebase", color: "green-text-gradient" },
+      { name: "reactjs", color: "pink-text-gradient" },
+      { name: "nodejs", color: "yellow-text-gradient" },
+    ],
+    image: travelita,
+    source_code_link: "https://github.com/Ashik-Muhammed/Travelita",
+  },
+  {
+    name: "Zygreen",
+    description:
+      "Zygreen is an eco-conscious lifestyle brand dedicated to sustainable innovation for a better tomorrow. The platform offers premium, earth-friendly products that combine cutting-edge design with environmental responsibility. Features include a curated marketplace of sustainable products, environmental impact tracking, educational content about eco-friendly living, and a community platform for conscious consumers. The application promotes sustainable choices through gamification, personalized recommendations, and transparent supply chain information.",
+    tags: [
+      { name: "python", color: "blue-text-gradient" },
+      { name: "iot", color: "green-text-gradient" },
+      { name: "ai", color: "pink-text-gradient" },
+      { name: "sensors", color: "yellow-text-gradient" },
+    ],
+    image: zygreen,
+    source_code_link: "https://github.com/Ashik-Muhammed/zygreen",
+  },
   {
     name: "CrediScope - Loan Risk Predictor",
     description:
