@@ -1,9 +1,7 @@
 
 import {
-project1,
-zygreen,
-travelita,
-nimo,
+  project1,
+  zygreen,
   Flutter,
   Android,
   dart,
