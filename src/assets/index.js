@@ -38,7 +38,7 @@ import dart from "./tech/dart.png";
 import java from "./tech/java.png";
 import office from "./tech/Microsoft_office.png";
 import C from "./tech/C.png";
-import zygreen from "./zygreen.png";
+import zygreen from "./zygreeen.png";
 import travelita from "./travelita.png";
 import nimo from "./nimo.png";
 export {
